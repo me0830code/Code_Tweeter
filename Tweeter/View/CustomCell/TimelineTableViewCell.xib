@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimelineTableViewCell" rowHeight="102" id="KGk-i7-Jjw" customClass="TimelineTableViewCell" customModule="Tweeter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ET0-6Y-yWK">
+                        <rect key="frame" x="15" y="15" width="345" height="85"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F3l-w5-A5d">
+                                <rect key="frame" x="10" y="5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="07s-EP-uBd"/>
+                                    <constraint firstAttribute="width" secondItem="F3l-w5-A5d" secondAttribute="height" multiplier="1:1" id="4ec-bH-Map"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUj-Ov-Dat">
+                                <rect key="frame" x="75" y="5" width="260" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Times Ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIl-ve-cVS">
+                                <rect key="frame" x="75" y="27" width="260" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zG3-1x-WXw">
+                                <rect key="frame" x="10" y="70" width="325" height="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zG3-1x-WXw" firstAttribute="trailing" secondItem="yIl-ve-cVS" secondAttribute="trailing" id="1i1-3W-L0u"/>
+                            <constraint firstItem="yIl-ve-cVS" firstAttribute="width" secondItem="WUj-Ov-Dat" secondAttribute="width" id="49U-PD-B6Y"/>
+                            <constraint firstItem="WUj-Ov-Dat" firstAttribute="top" secondItem="F3l-w5-A5d" secondAttribute="top" id="Ed4-C5-PQF"/>
+                            <constraint firstItem="yIl-ve-cVS" firstAttribute="top" secondItem="WUj-Ov-Dat" secondAttribute="bottom" constant="5" id="NjD-Lh-J4Z"/>
+                            <constraint firstItem="F3l-w5-A5d" firstAttribute="top" secondItem="ET0-6Y-yWK" secondAttribute="top" constant="5" id="PBa-wA-J96"/>
+                            <constraint firstItem="zG3-1x-WXw" firstAttribute="leading" secondItem="F3l-w5-A5d" secondAttribute="leading" id="TPI-EC-dgI"/>
+                            <constraint firstItem="zG3-1x-WXw" firstAttribute="top" secondItem="F3l-w5-A5d" secondAttribute="bottom" constant="15" id="bFx-D3-lgj"/>
+                            <constraint firstAttribute="trailing" secondItem="WUj-Ov-Dat" secondAttribute="trailing" constant="10" id="cuZ-Wk-ace"/>
+                            <constraint firstItem="WUj-Ov-Dat" firstAttribute="leading" secondItem="F3l-w5-A5d" secondAttribute="trailing" constant="15" id="eRV-hg-E2Q"/>
+                            <constraint firstItem="yIl-ve-cVS" firstAttribute="leading" secondItem="WUj-Ov-Dat" secondAttribute="leading" id="et7-SF-eh7"/>
+                            <constraint firstAttribute="bottom" secondItem="zG3-1x-WXw" secondAttribute="bottom" constant="5" id="kV7-mH-lBa"/>
+                            <constraint firstItem="F3l-w5-A5d" firstAttribute="leading" secondItem="ET0-6Y-yWK" secondAttribute="leading" constant="10" id="lDY-pG-hRr"/>
+                            <constraint firstItem="yIl-ve-cVS" firstAttribute="trailing" secondItem="WUj-Ov-Dat" secondAttribute="trailing" id="oXQ-Ct-5gO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ET0-6Y-yWK" secondAttribute="bottom" constant="5" id="Cs0-OM-jI1"/>
+                    <constraint firstItem="ET0-6Y-yWK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ehe-ru-7Q2"/>
+                    <constraint firstItem="ET0-6Y-yWK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="uSm-rP-6d0"/>
+                    <constraint firstAttribute="trailing" secondItem="ET0-6Y-yWK" secondAttribute="trailing" constant="15" id="yzw-R2-gaa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentMessageLabel" destination="zG3-1x-WXw" id="0bg-99-dtM"/>
+                <outlet property="timelineBackgroundView" destination="ET0-6Y-yWK" id="TVh-Nz-7CP"/>
+                <outlet property="timesAgoLabel" destination="yIl-ve-cVS" id="Yq0-SI-Pfo"/>
+                <outlet property="userNameLabel" destination="WUj-Ov-Dat" id="tr5-PH-dKd"/>
+                <outlet property="userPhotoImageView" destination="F3l-w5-A5d" id="8Sh-BL-3uz"/>
+            </connections>
+            <point key="canvasLocation" x="167.39130434782609" y="107.14285714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
