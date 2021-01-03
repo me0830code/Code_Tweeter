@@ -20,11 +20,11 @@ Side Project for MVVM Design Pattern and Unit Test
 # Demo
 Send a Chunking Tweet
 
-![](http://i.imgur.com/Wmr3F9T.gif)
+![](https://i.imgur.com/Wmr3F9T.gif)
 
 Dynamic Time Showing Tag
 
-![](http://i.imgur.com/tHOKQ0c.gif)
+![](https://i.imgur.com/tHOKQ0c.gif)
 
 # Third Party Library
 1. [Firebase](https://firebase.google.com/)
