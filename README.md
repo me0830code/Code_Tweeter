@@ -20,11 +20,16 @@ Side Project for MVVM Design Pattern and Unit Test
 # Demo
 Send a Chunking Tweet
 
-![](http://i.imgur.com/MuwT14y.gif)
+![](http://i.imgur.com/Wmr3F9T.gif)
 
-Dynamic Time Showing Text
+Dynamic Time Showing Tag
 
-![](http://i.imgur.com/dxQhvdV.gif)
+![](http://i.imgur.com/tHOKQ0c.gif)
+
+# Third Party Library
+1. [Firebase](https://firebase.google.com/)
+2. [IQKeyboardManager](https://github.com/hackiftekhar/IQKeyboardManager)
+3. [ESPullToRefresh](https://github.com/eggswift/pull-to-refresh)
 
 # Contacts
 Chien-Yu Yeh
