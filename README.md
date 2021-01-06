@@ -2,7 +2,7 @@
 Date : 108 / 11 / 27
 
 # Motivation & Purpose
-Side Project for MVVM Design Pattern and Unit Test
+Side Project - MVVM Design Pattern and Unit Test
 
 1. Twitter Timeline Wall
 2. Firebase
