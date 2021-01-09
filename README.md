@@ -1,5 +1,5 @@
 # Tweeter
-Date : 108 / 11 / 27
+Date : 2019 / 11 / 27
 
 # Motivation & Purpose
 Side Project - MVVM Design Pattern and Unit Test
